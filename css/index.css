@@ -1,0 +1,313 @@
+/*
+ * 轮播图
+ */
+.carousel-indicators li{
+	width: 6px;
+	height: 6px;
+}
+.carousel-indicators .active{
+	width: 7px;
+	height: 7px;
+}
+
+/*
+ * 导航
+ */
+.jd_nav{
+    width: 100%;
+    background: #fff;
+    overflow: hidden;
+}
+.jd_nav ul{
+    width: 100%;
+    padding: 10px 0 5px;
+}
+.jd_nav ul li{
+    width: 20%;
+    float: left;
+}
+.jd_nav ul li a{
+    display: block;
+}
+.jd_nav ul li a img{
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+}
+.jd_nav ul li a p{
+    text-align: center;
+    color: #666;
+    font-size: 12px;
+    padding: 6px 0;
+}
+
+/*
+ * floor部分
+ */
+.floor{
+	width: 100%;
+	font-size: 0;
+}
+
+/*floor部分-benefit*/
+.benefit{
+	min-height: 115px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.benefit li{
+	width: 100%;
+	height: 100%;
+}
+.benefit li a{
+	display: block;
+	width: 100%;
+}
+/*floor部分-京东秒杀*/
+.sale{
+	-webkit-box-shadow: 0 1px 1px #f2f2f2;
+	-moz-box-shadow: 0 1px 1px #f2f2f2;
+	box-shadow: 0 1px 1px #f2f2f2;
+}
+.sale .sale-header{
+	width: 100%;
+	height: 34px;
+	line-height: 34px;
+	vertical-align: middle;
+}
+.sale .sale-header a.s_left{
+	display: inline-block;
+	width: 68%;
+	float: left;
+}
+.sale .sale-header a.s_left .s_header_tit{
+	display: inline-block;
+	margin-left:6px;
+	vertical-align: middle;
+	font-size: 16px;
+	color: #F02B2B;
+	font-weight: 400;
+}
+.sale .sale-header a.s_left .s_header_time{
+	vertical-align: middle;
+}
+.sale .sale-header a.s_left .s_header_time ol li{
+	display: inline-block;
+	float: left;
+	font-size: 12px;
+	width: 15px;
+    height: 15px;
+    line-height: 15px;
+    margin-left: 2px;
+    background: black;
+    color: white;
+}
+.sale .sale-header a.s_left .s_header_time ol li:nth-child(3n){
+	background: white;
+	color: black;
+}
+
+.sale .sale-header a.s_right{
+	width: 32%;
+	color: #f23030;
+	font-size: 10px;
+	text-align: right;
+	padding-right: 8px;
+}
+.sale .sale-body{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.sale .sale-body ul{
+	width: 100%;
+	position: relative;
+}
+.sale .sale-body ul li.s_body_item .s_item_img{
+	padding: 0 15px;
+	box-sizing: border-box;
+}
+.sale .sale-body ul li.s_body_item .s_item_img a{
+	display: block;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+.sale .sale-body ul li.s_body_item .s_item_price{
+	margin: 0 auto;
+	width: 100%;
+}
+.sale .sale-body ul li.s_body_item .s_item_price .new_price{
+	display: block;
+	font-size: 15px;
+	color: #f23030;
+	height: 15px;
+	line-height: 15px;
+	margin-top: 11px;
+	font-weight: 800;
+}
+.sale .sale-body ul li.s_body_item .s_item_price .new_price em{
+	font-size: 11px;
+	padding-right: 2px;
+}
+.sale .sale-body ul li.s_body_item .s_item_price .old_price{
+	display: block;
+	color: #686868;
+	font-size: 12px;
+	line-height: 12px;
+	margin: 4px 0px 11px 0px;
+	padding: 0 2px;
+}
+
+/*
+ * 爱生活
+ */
+.floor_title{
+	width: 100%;
+	height: auto;
+	background: #F6F6F6;
+}
+.floor_title .floor_title_span{
+	display: inline-block;
+	width: 50%;
+	margin-top: 5px;
+}
+.floor_title .floor_title_span img{
+	display: inline-block;
+}
+.floor_container{
+	width: 100%;
+}
+.floor_container ul.floor_graphic_item{
+	padding: 0;
+	margin: 0;
+}
+.floor_container ul.floor_graphic_item li{
+	padding: 6.5px 0 5px 9px;
+	box-sizing: border-box;
+}
+.floor_container ul.floor_graphic_item li.item1,.floor_container ul.floor_graphic_item li.item3{
+	width: 50%;
+	padding-right: 9px;
+	box-sizing: border-box;
+}
+.floor_container ul.floor_graphic_item li.item2{
+	width: 25%;
+	box-sizing: border-box;
+}
+.floor_container ul.floor_graphic_item li + li{
+	border-left:1px solid #F5F5F5;
+}
+.floor_container ul.floor_graphic_item li.bor_none{
+	border: 0;
+}
+.floor_container ul.floor_graphic_item li a{
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	float: left;
+	position: relative;
+}
+.floor_container ul.floor_graphic_item li a .floor_graphic_item_l,
+.floor_container ul.floor_graphic_item li a .floor_graphic_item_r{
+	display: inline-block;
+	width: 50%;
+}
+.floor_container ul.floor_graphic_item li a .floor_graphic_item_l{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.floor_container ul.floor_graphic_item li a .floor_graphic_item_r{
+	margin-left: 50%;
+}
+.floor_container ul.floor_graphic_item li a .graphic_tit{
+	display: inline-block;
+	width: 100%;
+	font-size: 17px;
+	line-height: 22.5px;
+	color: black;
+}
+.floor_container ul.floor_graphic_item li a .graphic_wz{
+	width: 100%;
+	color: #FF5959;
+	font-size: 13px;
+}
+.floor_container ul.floor_graphic_item li a.gsc .graphic_wz{
+	color: #D663E1;
+}
+.floor_container ul.floor_graphic_item li.item1 a .graphic_img{
+	width: 100%;
+	padding: 0 14px;
+}
+.floor_container ul.floor_graphic_item li.item2 a .graphic_img{
+	width: 100%;
+}
+.floor_container ul.floor_graphic_item li a .graphic_img img{
+	display: inline-block;
+	margin: 5.5px 7px 0;
+	box-sizing: border-box;
+	width: 35%;
+	float: left;
+}
+.floor_container ul.floor_graphic_item li.item3 a .graphic_img img{
+	width: 30%;
+}
+.floor_container ul.floor_graphic_item li.item2 a .graphic_img img{
+	display: inline-block;
+	box-sizing: border-box;
+	width: 60%;
+}
+.floor_container ul.floor_graphic_item li a .floor_graphic_item_r .graphic_img img{
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 15px 0;
+	width: 90%;
+}
+
+/*
+ *版权信息
+ */
+.banquan{
+	color: #848689;
+	font-size: 12px;
+	padding: 10px 0;
+	margin: 5px 0 52px;
+	border-top: 1px solid #bfbfbf;
+	border-bottom: 1px solid #bfbfbf;
+}
+
+/*
+ * 底部导航
+ */
+.nav_bottom{
+	width: 100%;
+	max-width: 768px;
+    min-width: 320px;
+	position: fixed;
+	bottom: 0;
+	background: white;
+	-webkit-box-shadow: 0 0 10px 0px rgba(155,143,143,0.6);
+	-moz-box-shadow: 0 0 10px 0px rgba(155,143,143,0.6);
+	box-shadow: 0 0 10px 0px rgba(155,143,143,0.6);
+}
+.nav_bottom ul{
+	width: 100%;
+}
+.nav_bottom ul li{
+	width: 20%;
+	float: left;
+}
+.nav_bottom ul li a{
+	display: inline-block;
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+.nav_bottom ul li a img{
+	display: inline-block;
+	width: 55%;
+	min-width: 52px;
+	max-width: 70px;
+}

@@ -1,0 +1,183 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; }
+body { background:white; color:#333; font-size:14px; font-family: Verdana, Arial, Helvetica, sans-serif; }
+td,th,caption { font-size:14px; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
+a { color:#555; text-decoration:none; }
+a:hover { text-decoration:underline; }
+img { border:none; }
+ol,ul,li { list-style:none; }
+input, textarea, select, button { font:14px Verdana,Helvetica,Arial,sans-serif; }
+table { border-collapse:collapse; }
+html {overflow-y: scroll;} 
+input{
+	border: none;
+	outline: none;
+	-webkit-appearance: none;
+}
+
+.clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+.clearfix { *zoom:1; }
+
+[class^="icon_"]{
+    background: url("../img/sprites.png") no-repeat;
+    background-size: 200px 200px;
+}
+
+#jd{
+	width: 100%;
+    max-width: 768px;
+    min-width: 320px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: white;
+}
+
+/*
+ * 头部
+ */
+#jd_header{
+    height: 40px;
+    width: 100%;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.jd_header2{
+	position: static !important;
+}
+#jd_header .jd_header_box{
+    width: 100%;
+    min-width: 320px;
+    max-width: 768px;
+    margin: 0 auto;
+    background: rgba(201,21,35,0);
+    height: 40px;
+    position: relative;
+}
+.jd_header2 .jd_header_box{
+	background: url("../img/header-bg.png") repeat-x !important;
+	background-size: 1px 40px;
+}
+#jd_header .jd_header_box .jd_header_bgimg{
+    height: 36px;
+    position: absolute;
+    top: 4px;
+    left: 10px;
+}
+#jd_header .jd_header_box .icon_logo{
+    width: 60px;
+    background-position:0 -103px;
+}
+#jd_header .jd_header_box .jd_header_bgimg{
+	display: block;
+    height: 36px;
+}
+#jd_header .jd_header_box .jd_header_bgimg .icon_left{
+	display: inline-block;
+    width: 12px;
+    height: 20px;
+    background-position:-25px 1px;
+    margin: 6px 0 0 5px;
+}
+#jd_header .jd_header_box .login{
+    width: 50px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 15px;
+}
+#jd_header .jd_header_box .login .icon_navbar{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-position:-61px 1px;
+	vertical-align: middle;
+}
+#jd_header .jd_header_box .jd_header_form{
+	width: 100%;
+    padding:0 50px 0 76px;
+}
+#jd_header .jd_header_box .jd_header_form2{
+	width: 100%;
+    padding:0 50px 0 40px;
+    line-height: 40px;
+    font-size: 16px;
+}
+#jd_header .jd_header_box form{
+    width: 100%;
+    height: 40px;
+    position: relative;
+}
+#jd_header .jd_header_box form input{
+    width: 100%;
+    height: 30px;
+    border-radius: 15px;
+    margin-top: 5px;
+    padding-left: 30px;
+    font-size: 12px;
+}
+#jd_header .jd_header_box form .icon_search{
+    height: 20px;
+    width:20px;
+    position: absolute;
+    background-position: -60px -109px;
+    top: 10px;
+    left: 7px;
+}
+.navToggle{
+	width: 100%;
+	height: 57px;
+	overflow: hidden;
+	margin: 0;
+	background: #F0F0F0;
+	position: absolute;
+	z-index: 100;
+}
+.navToggle li{
+	display: inline-block;
+	width: 25%;
+	height: 57px;
+	float: left;
+	overflow: hidden;
+}
+.navToggle li.active{
+	background: #E0E0E0;
+}
+.navToggle li a{
+	display: inline-block;
+	width: 100%;
+	height: 57px;
+	text-align: center;
+}
+.navToggle li a img{
+	display: inline-block;
+	width: 70px;
+	max-height: 57px;
+}
+
+.text_hide{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.bor_l{
+	border-left:1px solid #F5F5F5;
+}
+.bor_r{
+	border-right:1px solid #F5F5F5;
+}
+.bor_t{
+	border-top:1px solid #F5F5F5;
+}
+.bor_b{
+	border-bottom:1px solid #F5F5F5;
+}
