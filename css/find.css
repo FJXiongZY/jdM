@@ -1,0 +1,101 @@
+/*
+ * 筛选导航
+ */
+.filter{
+	width: 100%;
+	position: relative;
+}
+.filter ul{
+	height: 38px;
+	padding: 0 10px;
+	position: relative;
+	overflow: hidden;
+}
+.filter ul li{
+	height: 38px;
+	float: left;
+}
+.filter ul li a{
+	display: block;
+	padding: 0 15px;
+	font-size: 13px;
+	margin: 10px 0 6px;
+	font-weight: 400;
+}
+.filter ul li + li a{
+	border-left: 1px solid #C0C0C0;
+}
+.filter ul li.active{
+	border-bottom: 2px solid red;
+}
+.filter ul li.active a{
+	color: red;
+}
+
+/*
+ * 发现内容
+ */
+.find_body{
+	width: 100%;
+}
+.find_body .find_item{
+	padding: 10px;
+}
+.find_body .find_item .item_head{
+	display: inline-block;
+	width: 100%;
+	height: 120px;
+	overflow: hidden;
+}
+.find_body .find_item .item_head .head_body{
+	margin-left: 140px;
+}
+.find_body .find_item .item_head .head_body .head_heading{
+	font-size: 17px;
+	line-height: 20px;
+	margin-bottom: 10px;
+	font-size: #2e2e2e;
+}
+.find_body .find_item .item_head .head_body .head_p_text{
+	font-size: 12px;
+	color: #646464;
+	line-height: 18px;
+	-webkit-line-clamp: 5;
+}
+.find_body .find_item .item_head .head_left{
+	width: 130px;
+	height: 120px;
+	box-sizing: border-box;
+	float: left;
+}
+.find_body .find_item .item_head .head_left img{
+	width: 130px;
+	height: 130px;
+}
+.find_body .find_item .item_footer{
+	height: 20px;
+	line-height: 20px;
+}
+.find_body .find_item .item_footer .footer_left{
+	display: inline-block;
+	width: 40%;
+	font-size: 10px;
+	color: #989898;
+}
+.find_body .find_item .item_footer .footer_left .right_time{
+	float: left;
+	margin-right: 15px;
+}
+.find_body .find_item .item_footer .footer_left .right_see{
+}
+.find_body .find_item .item_footer .footer_right{}
+.find_body .find_item .item_footer .footer_right img{
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+}
+.find_body .find_item .item_footer .footer_right span{
+	display: inline-block;
+	font-size: 12px;
+	color: #989898;
+}

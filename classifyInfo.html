@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JD</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/classifyInfo.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+	<div id="jd">
+		<!--头部-->
+  		<div id="jd_header" class="jd_header2 bor_b">
+	  		<div class="jd_header_box">
+	        <a href="javascript:history.go(-1);" class="jd_header_bgimg"><span class="icon_left"></span></a>
+	        <div class="jd_header_form2 text-center">
+	        	<ul class="list-inline">
+	        		<li class="active"><a href="javascript:;">商品</a></li>
+	        		<li><a href="javascript:;">详情</a></li>
+	        		<li><a href="javascript:;">评价</a></li>
+	        	</ul>
+	        </div>
+	        <a href="#" class="login" type="button" data-target=".navToggle" data-toggle="collapse">
+	        	<span class="icon_navbar"></span>
+	        </a>
+	    	</div>
+	  	</div>
+	  	<!--/头部-->
+	  	
+	  	<!--导航-->
+	  	<ul class="navToggle collapse">
+        	<li><a href="index.html"><img src="img/n-home.png" class="img-responsive" alt="" /></a></li>
+        	<li class="active"><a href="classify.html"><img src="img/n-catergry.png" class="img-responsive" alt="" /></a></li>
+        	<li><a href="find.html"><img src="img/n-find.png" class="img-responsive" alt="" /></a></li>
+        	<li><a href="cart.html"><img src="img/n-cart.png" class="img-responsive" alt="" /></a></li>
+        	<li><a href="meJd.html"><img src="img/n-me.png" class="img-responsive" alt="" /></a></li>
+        </ul>
+	  	<!--/导航-->
+	  	
+	  	<div class="shop_content">
+	  		<!--焦点图片-->
+	  		<div class="scroll_imgs">
+	  			<ul class="scroll_imgs_ul">
+	  				<li><a href="javascript:;"><img src="img/s_i_head1.jpg" alt="" /></a></li>
+	  				<li><a href="javascript:;"><img src="img/s_i_head2.jpg" alt="" /></a></li>
+	  				<li><a href="javascript:;"><img src="img/s_i_head3.jpg" alt="" /></a></li>
+	  				<li><a href="javascript:;"><img src="img/s_i_head4.jpg" alt="" /></a></li>
+	  				<li><a href="javascript:;"><img src="img/s_i_head5.jpg" alt="" /></a></li>
+	  			</ul>
+	  			<div class="scroll_nub">
+	  				<em class="nub_slide_to">1</em>
+	  				<em class="nub_bg">/</em>
+	  				<em class="nub_slide_sum">5</em>
+	  			</div>
+	  		</div>
+	  		<!--/焦点图片-->
+	  		<!--商品主要信息-->
+	  		<div class="goods_part">
+	  			<div class="goods_part_info bor_t">
+	  				<div class="info_tit">
+	  					<a href="javascript:;" class="love_heart_icn">
+	  						<span class="icn_img_xin">
+	  							<i class="please_focus block" data-display="block"></i>
+	  							<i class="focus none" data-display="none"></i>
+	  						</span>
+	  						<span class="icn_attention">关注</span>
+	  					</a>
+	  					<a href="javascript:;" class="detailInfoClick">
+	  						<span class="tit_text_wrap">
+	  							<img src="img/tit_text_wrap1.png" alt="" />
+	  							<span class="ziying">自营</span>
+	  							<span class="tit_text">【新年货】荣耀 畅玩6X 4GB 32GB 全网通4G手机 高配版 冰河银</span>
+	  						</span>
+	  					</a>
+	  				</div>
+	  				<div class="info_act">
+	  					限时优惠100！低至999！大内存长续航！
+	  					<a href="javascript:;" class="info_act_a">荣耀爆款立省1000！</a>
+	  				</div>
+	  				<div class="info_price">
+	  					<div class="info_price_left">
+	  						<span><em>￥</em>999<em>.00</em></span>
+	  					</div>
+	  					<div class="info_price_right">
+	  						<div class="notice">降价通知</div>
+	  					</div>
+	  				</div>
+	  			</div>
+	  		</div>
+	  		<!--/商品主要信息-->
+	  		<!--促销-->
+	  		<div class="goods_part margin_t">
+	  			<div class="goods_part_info Promotion">
+	  				<div class="info_content">
+	  					<span class="part_note_msg">促销</span>
+		  				<div class="part_note_content">
+		  					<div class="promotion_item text_hide">
+		  						<span class="label-icon-div">换购</span>
+		  						<a href="javascript:;">
+		  							<span>购买1件可优惠换购热销商品</span>
+		  						</a>
+		  					</div>
+		  					<div class="promotion_item text_hide">
+		  						<span class="label-icon-div">满送</span>
+		  						<a href="javascript:;">
+		  							<span>满19元即赠热销商品，赠完即止</span>
+		  						</a>
+		  					</div>
+		  					<div class="promotion_item item_display_inline text_hide">
+		  						<span class="label-icon-div">限购</span>
+		  					</div>
+		  					<div class="promotion_item item_display_inline text_hide">
+		  						<span class="label-icon-div">限制</span>
+		  					</div>
+		  					<div class="promotion_item item_display_inline text_hide">
+		  						<span class="label-icon-div">满额返券</span>
+		  					</div>
+		  				</div>
+		  				<i class="glyphicon glyphicon-option-horizontal part_note_more pull-right"></i>
+	  				</div>
+	  			</div>
+	  		</div>
+	  		<!--/促销-->
+	  		<!--选择商品样式-->
+	  		<div class="goods_part margin_t">
+	  			<div class="goods_part_info Promotion">
+	  				<div class="info_content">
+	  					<span class="part_note_msg">已选</span>
+		  				<div class="part_note_content">
+		  					<div class="promotion_item text_hide">
+		  						<a href="javascript:;">
+		  							<span>冰河银 全网通（4GB 32GB） 官方标配</span>
+		  						</a>
+		  					</div>
+		  					<div class="promotion_item text_hide">
+		  						<span class="label-icon-div label-icon-div2">保</span>
+		  						<a href="javascript:;">
+		  							<span>可选延保</span>
+		  						</a>
+		  					</div>
+		  				</div>
+		  				<i class="glyphicon glyphicon-option-horizontal part_note_more pull-right"></i>
+	  				</div>
+	  			</div>
+	  		</div>
+	  		<!--/选择商品样式-->
+	  		<!--配送地址-->
+	  		<div class="goods_part delivery_location margin_t">
+	  			<div class="goods_part_info">
+	  				<div class="info_content">
+	  					<span class="part_note_msg">送至</span>
+		  				<div class="part_note_content">
+		  					<div class="promotion_item text_hide">
+		  						<a href="javascript:;">
+		  							<span>北京</span>
+		  							<span>朝阳区</span>
+		  							<span>管庄</span>
+		  							<span><i class="glyphicon glyphicon-map-marker"></i></span>
+		  						</a>
+		  					</div>
+		  					<div class="promotion_item text_hide">
+		  						<a href="javascript:;" class="color">
+		  							<span>现货，11:10前下单,预计今天(01月23日)送达</span>
+		  						</a>
+		  					</div>
+		  				</div>
+		  				<i class="glyphicon glyphicon-option-horizontal part_note_more pull-right"></i>
+	  				</div>
+	  			</div>
+	  		</div>
+	  		<!--/配送地址-->
+	  		<!--重量-->
+	  		<div class="goods_part goods_part2">
+	  			<div class="goods_part_info">
+	  				<div class="info_content">
+	  					<span class="part_note_msg">重量</span>
+		  				<div class="part_note_content">
+		  					<div class="promotion_item text_hide">
+		  						<a href="javascript:;">
+		  							<span>0.375kg</span>
+		  						</a>
+		  					</div>
+		  				</div>
+	  				</div>
+	  			</div>
+	  		</div>
+	  		<!--/重量-->
+	  		<!--服务-->
+	  		<div class="service_floor">
+	  			<ul class="clearfix">
+	  				<li><i class="icon_dui"></i><span>京东发货&售后</span></li>
+	  				<li><i class="icon_dui"></i><span>可配送海外</span></li>
+	  				<li><i class="icon_dui"></i><span>京准达</span></li>
+	  				<li><i class="icon_dui"></i><span>211限时达</span></li>
+	  				<li><i class="icon_dui"></i><span>货到付款</span></li>
+	  				<li><i class="icon_dui"></i><span>自提</span></li>
+	  				<li><i class="icon_dui"></i><span>7天无理由退货</span></li>
+	  				<li><i class="icon_dui"></i><span>99元免基础运费(20kg内)</span></li>
+	  				<li class="no_service"><i class="glyphicon glyphicon-remove-circle"></i><span>不可使用京券东券</span></li>
+	  			</ul>
+	  		</div>
+	  		<!--/服务-->
+	  		<!--店铺-->
+	  		<div class="goods_part padding_b">
+	  			<div class="goods_part_info">
+	  				<div class="info_content">
+	  					<a href="javascrip:;" class="shop_href">
+	  						<div class="shop_row1">
+	  							<div class="shop_row1_img">
+	  								<img src="img/shop_row1_img.jpg" alt="" />
+	  							</div>
+	  							<div class="shop_row1_tit">
+	  								<p class="tit_name text-hide">荣耀京东自营旗舰店<span class="ziying">自营</span></p>
+	  								<span class="tit_describ">荣耀官方旗舰店</span>
+	  							</div>
+	  						</div>
+	  						<div class="shop_row2 clearfix">
+	  							<div class="tabs">
+	  								<div class="tabs_num">242.7万</div>
+	  								<div class="tabs_text">关注人数</div>
+	  							</div>
+	  							<div class="tabs">
+	  								<div class="tabs_num">111</div>
+	  								<div class="tabs_text">全部商品</div>
+	  							</div>
+	  						</div>
+	  					</a>
+	  					<div class="shop_footer clearfix">
+	  						<div class="shop_btn">
+	  							<div class="shop_btn_box">
+	  								<a href="javascript:;">
+	  									<i class="glyphicon glyphicon-heart-empty"></i>
+	  									<span class="dong_text">关注店铺</span>
+	  								</a>
+	  							</div>
+	  						</div>
+	  						<div class="shop_btn">
+	  							<div class="shop_btn_box">
+	  								<a href="javascript:;">
+	  									<i class="glyphicon glyphicon-bed"></i>
+		  								<span class="dong_text">进店逛逛</span>
+	  								</a>
+	  							</div>
+	  						</div>
+	  					</div>
+	  				</div>
+	  			</div>
+	  		</div>
+	  		<!--/店铺-->
+	  		<!--评论-->
+	  		<div class="comment margin_t">
+	  			<div class="comment_head">
+						<div class="comment_head_main clearfix">
+							<span class="pull-left">评价(<em>83.4万</em>)</span>
+							<span class="pull-right">好评 <em class="goods">98%</em><i class="glyphicon glyphicon-menu-right"></i></span>
+						</div>
+					</div>
+					<div class="comment_content">
+						<div class="content_list">
+							<div class="list_item bor_t">
+								<div class="list_item_top">
+									<div class="top_xing pull-left">
+										<i class="glyphicon glyphicon-star"></i>
+										<i class="glyphicon glyphicon-star"></i>
+										<i class="glyphicon glyphicon-star"></i>
+										<i class="glyphicon glyphicon-star"></i>
+										<i class="glyphicon glyphicon-star"></i>
+									</div>
+									<span class="top_userName pull-right">j***蛤</span>
+								</div>
+								<div class="list_item_body">
+									<p>手机前天买的，今天中午到的我手中。简单请假一下，第一次买华为，这机器手感不错，操作也很简单，整体的流畅度也很好，前置拍照一般般，后置对的起价钱，音质还行，能听。屏幕素质一般般，显示偏绿，系统易用，到手就是最新版本。这个手机是买给我妈用的，我本人用的360n4s骁龙版，相比较之下，360的系统也好用，个人感觉比华为好点，而且360手机5000的电池，骁龙625的处理器，很耐操，荣耀6x性价比完全不是360的对手，不过现在这个价位也是很不错的选择。对了说一下王者，荣耀打王者略微发热，帧数没有360的稳定。</p>
+								</div>
+								<div class="list_item_imgs">
+									<ul class="clearfix">
+										<li class="comment-img-item"><a href="javascript:;"><img src="img/item_imgs1.jpg.webp" alt="" /></a></li>
+										<li class="comment-img-item"><a href="javascript:;"><img src="img/item_imgs2.jpg.webp" alt="" /></a></li>
+										<li class="comment-img-item"><a href="javascript:;"><img src="img/item_imgs3.jpg.webp" alt="" /></a></li>
+										<li class="comment-img-item"><a href="javascript:;"><img src="img/item_imgs4.jpg.webp" alt="" /></a></li>
+									</ul>
+								</div>
+								<div class="list_item_footer pull-right">
+									2017-10-14
+								</div>
+							</div>
+							<div class="list_item bor_t">
+								<div class="list_item_top">
+									<div class="top_xing pull-left">
+										<i class="glyphicon glyphicon-star"></i>
+										<i class="glyphicon glyphicon-star"></i>
+										<i class="glyphicon glyphicon-star"></i>
+										<i class="glyphicon glyphicon-star"></i>
+										<i class="glyphicon glyphicon-star"></i>
+									</div>
+									<span class="top_userName pull-right">j***蛤</span>
+								</div>
+								<div class="list_item_body">
+									<p>手机前天买的，今天中午到的我手中。简单请假一下，第一次买华为，这机器手感不错，操作也很简单，整体的流畅度也很好，前置拍照一般般，后置对的起价钱，音质还行，能听。屏幕素质一般般，显示偏绿，系统易用，到手就是最新版本。这个手机是买给我妈用的，我本人用的360n4s骁龙版，相比较之下，360的系统也好用，个人感觉比华为好点，而且360手机5000的电池，骁龙625的处理器，很耐操，荣耀6x性价比完全不是360的对手，不过现在这个价位也是很不错的选择。对了说一下王者，荣耀打王者略微发热，帧数没有360的稳定。</p>
+								</div>
+								<div class="list_item_imgs">
+									<ul class="clearfix">
+										<li class="comment-img-item"><a href="javascript:;"><img src="img/item_imgs1.jpg.webp" alt="" /></a></li>
+										<li class="comment-img-item"><a href="javascript:;"><img src="img/item_imgs2.jpg.webp" alt="" /></a></li>
+										<li class="comment-img-item"><a href="javascript:;"><img src="img/item_imgs3.jpg.webp" alt="" /></a></li>
+										<li class="comment-img-item"><a href="javascript:;"><img src="img/item_imgs4.jpg.webp" alt="" /></a></li>
+									</ul>
+								</div>
+								<div class="list_item_footer pull-right">
+									2017-10-14
+								</div>
+							</div>
+							<div class="list_item bor_t">
+								<div class="list_item_top">
+									<div class="top_xing pull-left">
+										<i class="glyphicon glyphicon-star"></i>
+										<i class="glyphicon glyphicon-star"></i>
+										<i class="glyphicon glyphicon-star"></i>
+										<i class="glyphicon glyphicon-star"></i>
+										<i class="glyphicon glyphicon-star"></i>
+									</div>
+									<span class="top_userName pull-right">j***蛤</span>
+								</div>
+								<div class="list_item_body">
+									<p>手机前天买的，今天中午到的我手中。简单请假一下，第一次买华为，这机器手感不错，操作也很简单，整体的流畅度也很好，前置拍照一般般，后置对的起价钱，音质还行，能听。屏幕素质一般般，显示偏绿，系统易用，到手就是最新版本。这个手机是买给我妈用的，我本人用的360n4s骁龙版，相比较之下，360的系统也好用，个人感觉比华为好点，而且360手机5000的电池，骁龙625的处理器，很耐操，荣耀6x性价比完全不是360的对手，不过现在这个价位也是很不错的选择。对了说一下王者，荣耀打王者略微发热，帧数没有360的稳定。</p>
+								</div>
+								<div class="list_item_imgs">
+									<ul class="clearfix">
+										<li class="comment-img-item"><a href="javascript:;"><img src="img/item_imgs1.jpg.webp" alt="" /></a></li>
+										<li class="comment-img-item"><a href="javascript:;"><img src="img/item_imgs2.jpg.webp" alt="" /></a></li>
+										<li class="comment-img-item"><a href="javascript:;"><img src="img/item_imgs3.jpg.webp" alt="" /></a></li>
+										<li class="comment-img-item"><a href="javascript:;"><img src="img/item_imgs4.jpg.webp" alt="" /></a></li>
+									</ul>
+								</div>
+								<div class="list_item_footer pull-right">
+									2017-10-14
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="comment_footer bor_b bor_t">
+						<div class="eval_box_i clearfix">
+							<a href="javascript:;">查看全部评价(<em>83.4万</em>)</a>
+							<a href="javascript:;" class="bor_l">购买咨询(<em>521</em>)</a>
+						</div>
+					</div>
+	  		</div>
+	  		<!--/评论-->
+	  		
+	  		<!--京东问答-->
+	  		<div class="goods_part">
+	  			<div class="goods_part_info">
+	  				<div class="info_content">
+	  					<a href="javascript:;">
+	  						<h4 class="jd_QA_tit"><span>京东问答</span><i class="glyphicon glyphicon-menu-right pull-right row_more"></i></h4>
+	  						<ul class="jd_QA_list">
+	  							<li class="clearfix">
+	  								<div class="list_tit pull-left"><em class="list_tit_img"></em>这手机玩王者昨样</div>
+	  								<span class="aside pull-right">52个回答</span>
+	  							</li>
+	  							<li class="clearfix">
+	  								<div class="list_tit pull-left"><em class="list_tit_img"></em>OPPOa57好用还是这个荣耀6x好用</div>
+	  								<span class="aside pull-right">52个回答</span>
+	  							</li>
+	  						</ul>
+	  					</a>
+	  				</div>
+	  			</div>
+	  		</div>
+	  		<!--/京东问答-->
+	  		
+	  		<!--以旧换新-->
+	  		<div class="goods_part">
+	  			<div class="info_content_row">
+						<span class="pull-left">以旧换新</span>
+						<i class="glyphicon glyphicon-menu-right pull-right row_more"></i>
+					</div>
+	  		</div>
+	  		<!--/以旧换新-->
+	  		<!--上拉查看详情-->
+	  		<div class="bottomTipFloor">
+	  			<i class="glyphicon glyphicon-circle-arrow-up row_more"></i>
+	  			<span>上拉查看图文详情 </span>
+	  		</div>
+	  		<!--/上拉查看详情-->
+	  	</div>
+	  	
+	  	<!--底部按钮-->
+	  	<div class="cart_fiexd clearfix">
+	  		<div class="concern_cart clearfix pull-left">
+	  			<a href="jvascript:;">
+	  				<span class="concern_cart_img"><i class="glyphicon glyphicon-bell"></i></span>
+	  				<span class="concern_cart_text">供应商</span>
+	  			</a>
+	  			<a href="jvascript:;">
+	  				<span class="concern_cart_img"><i class="glyphicon glyphicon-bed"></i></span>
+	  				<span class="concern_cart_text">进店</span>
+	  			</a>
+	  			<a href="jvascript:;">
+	  				<span class="concern_cart_img"><i class="glyphicon glyphicon-shopping-cart"></i></span>
+	  				<span class="concern_cart_text">购物车</span>
+	  			</a>
+	  		</div>
+	  		<div class="action_list pull-right clearfix">
+	  			<a href="javascript:;" class="add_cart">加入购物车</a>
+	  			<a href="javascript:;" class="directorder">立即购买</a>
+	  		</div>
+	  	</div>
+	  	<!--/底部按钮-->
+	  	
+	  	<!--全屏黑-->
+	  	<div class="jd_all_black marketing_black">
+	  		<!--促销上拉选项-->
+		  	<div class="marketing">
+			  	<div class="marketing_inner">
+			  		<div class="marketing_tit">
+			  			<h4 class="marketing_tit_text">促销</h4>
+			  			<span class="marketing_tit_close"><i class="glyphicon glyphicon-remove"></i></span>
+			  		</div>
+			  		<div class="marketing_content">
+			  			<ul>
+			  				<li>
+			  					<a href="javascript:;">
+			  						<span class="label-icon-div pull-left">换购</span>
+			  						<p class="marketing_info">购买1件可优惠换购热销商品</p>
+			  						<i class="glyphicon glyphicon-menu-right row_more"></i>
+			  					</a>
+			  				</li>
+			  				<li>
+			  					<a href="javascript:;">
+			  						<span class="label-icon-div pull-left">满送</span>
+			  						<p class="marketing_info">满19元即赠热销商品，赠完即止</p>
+			  						<i class="glyphicon glyphicon-menu-right row_more"></i>
+			  					</a>
+			  				</li>
+			  				<li>
+			  					<a href="javascript:;">
+			  						<span class="label-icon-div pull-left">限购</span>
+			  						<p class="marketing_info">购买1-10件时享受单件价￥999，超出数量以结算价为准</p>
+			  					</a>
+			  				</li>
+			  				<li>
+			  					<a href="javascript:;">
+			  						<span class="label-icon-div pull-left">限制</span>
+			  						<p class="marketing_info">此价格不与套装优惠同时享受</p>
+			  					</a>
+			  				</li>
+			  				<li>
+			  					<a href="javascript:;">
+			  						<span class="label-icon-div pull-left">满减返卷</span>
+			  						<p class="marketing_info">满1元返手机配件满59减6元优惠券</p>
+			  					</a>
+			  				</li>
+			  				<li>
+			  			</ul>
+			  		</div>
+			  	</div>
+		  	</div>
+		  	<!--/促销上拉选项-->
+	  	</div>
+	  	<!--/全屏黑-->
+	  	<!--全屏黑-->
+	  	<div class="jd_all_black location_black">
+	  		<!--地理定位-->
+	  		<div class="location">
+	  			<div class="location_tit bor_b">
+	  				<span class="glyphicon glyphicon-menu-left left_more"></span>
+	  				<h4 class="location_tit_text">配送至</h4>
+	  			</div>
+	  			<div class="location_content">
+	  				<div class="content_city content_often">
+	  					<h5 class="default_tit">常用地址</h5>
+	  					<ul class="location_content_ul">
+	  						<li><span>安徽省合肥市肥东县肥东一中</span><i class="glyphicon glyphicon-ok"></i></li>
+	  						<li><span>安徽省合肥市肥东县肥东一中</span><i class="glyphicon glyphicon-ok"></i></li>
+	  						<li><span>安徽省合肥市肥东县肥东一中</span><i class="glyphicon glyphicon-ok"></i></li>
+	  					</ul>
+	  				</div>
+	  				<div class="content_city content_other">
+	  					<h5 class="default_tit">常用地址</h5>
+	  					<ul class="location_content_ul">
+	  						<li><span>北京</span><i class="glyphicon glyphicon-ok"></i></li>
+	  						<li><span>上海</span><i class="glyphicon glyphicon-ok"></i></li>
+	  						<li><span>天津</span><i class="glyphicon glyphicon-ok"></i></li>
+	  						<li><span>重庆</span><i class="glyphicon glyphicon-ok"></i></li>
+	  						<li><span>河北</span><i class="glyphicon glyphicon-ok"></i></li>
+	  						<li><span>山西</span><i class="glyphicon glyphicon-ok"></i></li>
+	  						<li><span>河南</span><i class="glyphicon glyphicon-ok"></i></li>
+	  						<li><span>辽宁</span><i class="glyphicon glyphicon-ok"></i></li>
+	  						<li><span>吉林</span><i class="glyphicon glyphicon-ok"></i></li>
+	  						<li><span>黑龙江</span><i class="glyphicon glyphicon-ok"></i></li>
+	  						<li><span>内蒙古</span><i class="glyphicon glyphicon-ok"></i></li>
+	  						<li><span>江苏</span><i class="glyphicon glyphicon-ok"></i></li>
+	  						<li><span>山东</span><i class="glyphicon glyphicon-ok"></i></li>
+	  						<li><span>安徽</span><i class="glyphicon glyphicon-ok"></i></li>
+	  						<li><span>浙江</span><i class="glyphicon glyphicon-ok"></i></li>
+	  						<li><span>福建</span><i class="glyphicon glyphicon-ok"></i></li>
+	  						<li><span>湖北</span><i class="glyphicon glyphicon-ok"></i></li>
+	  						<li><span>湖南</span><i class="glyphicon glyphicon-ok"></i></li>
+	  						<li><span>广东</span><i class="glyphicon glyphicon-ok"></i></li>
+	  						<li><span>广西</span><i class="glyphicon glyphicon-ok"></i></li>
+	  						<li><span>江西</span><i class="glyphicon glyphicon-ok"></i></li>
+	  						<li><span>四川</span><i class="glyphicon glyphicon-ok"></i></li>
+	  						<li><span>海南</span><i class="glyphicon glyphicon-ok"></i></li>
+	  						<li><span>贵州</span><i class="glyphicon glyphicon-ok"></i></li>
+	  						<li><span>北京</span><i class="glyphicon glyphicon-ok"></i></li>
+	  						<li><span>上海</span><i class="glyphicon glyphicon-ok"></i></li>
+	  						<li><span>天津</span><i class="glyphicon glyphicon-ok"></i></li>
+	  						<li><span>重庆</span><i class="glyphicon glyphicon-ok"></i></li>
+	  						<li><span>河北</span><i class="glyphicon glyphicon-ok"></i></li>
+	  						<li><span>山西</span><i class="glyphicon glyphicon-ok"></i></li>
+	  						<li><span>河南</span><i class="glyphicon glyphicon-ok"></i></li>
+	  						<li><span>辽宁</span><i class="glyphicon glyphicon-ok"></i></li>
+	  						<li><span>吉林</span><i class="glyphicon glyphicon-ok"></i></li>
+	  						<li><span>黑龙江</span><i class="glyphicon glyphicon-ok"></i></li>
+	  						<li><span>内蒙古</span><i class="glyphicon glyphicon-ok"></i></li>
+	  						<li><span>江苏</span><i class="glyphicon glyphicon-ok"></i></li>
+	  						<li><span>山东</span><i class="glyphicon glyphicon-ok"></i></li>
+	  						<li><span>安徽</span><i class="glyphicon glyphicon-ok"></i></li>
+	  						<li><span>浙江</span><i class="glyphicon glyphicon-ok"></i></li>
+	  						<li><span>福建</span><i class="glyphicon glyphicon-ok"></i></li>
+	  						<li><span>湖北</span><i class="glyphicon glyphicon-ok"></i></li>
+	  						<li><span>湖南</span><i class="glyphicon glyphicon-ok"></i></li>
+	  						<li><span>广东</span><i class="glyphicon glyphicon-ok"></i></li>
+	  						<li><span>广西</span><i class="glyphicon glyphicon-ok"></i></li>
+	  						<li><span>江西</span><i class="glyphicon glyphicon-ok"></i></li>
+	  						<li><span>四川</span><i class="glyphicon glyphicon-ok"></i></li>
+	  						<li><span>海南</span><i class="glyphicon glyphicon-ok"></i></li>
+	  						<li><span>贵州</span><i class="glyphicon glyphicon-ok"></i></li>
+	  					</ul>
+	  				</div>
+	  			</div>
+	  		</div>
+	  		<!--/地理定位-->
+	  	</div>
+	  	<!--/全屏黑-->
+	  	
+		  	
+	</div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/classifyInfo.js"></script>
+  </body>
+</html>

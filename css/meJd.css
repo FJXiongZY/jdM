@@ -1,0 +1,162 @@
+.wrapper{
+	width: 100%;
+	height: auto;
+	background: #f7f7f7;
+}
+.wrapper .w_head{
+	margin-bottom: 15px;
+	padding: 10px;
+	background: white;
+}
+.wrapper .w_head .w_head_box{
+	overflow: hidden;
+	border-radius: 6px;
+	font-size: 12px;
+	color: white;
+	background: linear-gradient(90deg,#eb3c3c,#ff7459);
+	box-shadow: 0 2px 5px rgba(255,98,98,.4);
+}
+.wrapper .w_head .w_head_box .w_head_box_mian{
+	padding: 25px 15px;
+	position: relative;
+}
+.wrapper .w_head .w_head_box .w_head_box_mian .media-left{
+	margin-right: 10px;
+}
+.wrapper .w_head .w_head_box .w_head_box_mian .media-left a{
+	display: inline-block;
+	width: 100%;
+}
+.wrapper .w_head .w_head_box .w_head_box_mian .media-left a img{
+	width: 60px;
+	height: 60px;
+}
+.wrapper .w_head .w_head_box .w_head_box_mian .media-body .media-heading{
+	font-size: 14px;
+}
+.wrapper .w_head .w_head_box .w_head_box_mian .media-body .media-heading i{
+	font-size: 10px;
+}
+.wrapper .w_head .w_head_box .w_head_box_mian .media-body .userName{
+	color: hsla(0,0%,100%,.7);
+	margin-top: 3px;
+}
+.wrapper .w_head .w_head_box .w_head_box_mian .media-body .user_info{
+	margin-top: 6px;
+}
+.wrapper .w_head .w_head_box .w_head_box_mian .media-body .user_info .user_info_1{
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0 6px 0 10px;
+	height: 16px;
+	line-height: 16px;
+	margin: 0 3px 0 8px;
+	font-size: 10px;
+	color: white;
+	border-radius: 0 12px 12px 0;
+	background: #9f3838;
+}
+.wrapper .w_head .w_head_box .w_head_box_mian .media-body .user_info .user_info_1:before{
+	content: " ";
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: url("../img/icon_vip.png") no-repeat -21px -2px;
+	background-size: 100px 20px;
+	position: absolute;
+	left: -10px;
+}
+.wrapper .w_head .w_head_box .w_head_box_mian .media-body .user_info .user_info_1:after{
+	content: "铜牌";
+}
+.wrapper .w_head .w_head_box .w_head_box_mian .media-body .user_info .user_info_2{
+	display: inline-block;
+	position: relative;
+	margin-right: 3px;
+	padding: 0 16px 0 7px;
+	border-radius: 15px;
+	height: 15px;
+	line-height: 15px;
+	font-size: 10px;
+	color: white;
+	vertical-align: middle;
+	background: rgba(180,50,27,.3);
+	box-sizing: border-box;
+}
+.wrapper .w_head .w_head_box .w_head_box_mian .media-body .user_info .user_info_2 i{
+	margin: 0 3px;
+}
+.wrapper .w_head .w_head_box .w_head_box_mian .media-body .user_info .user_info_3{
+	position: absolute;
+	right: -2px;
+	bottom: -8px;
+	-webkit-transform: rotate(11deg);
+	transform: rotate(11deg);
+	padding: 18px 15px 15px 8px;
+	border-top-left-radius: 4px;
+	box-shadow: -1px -1px 6px #c6934d;
+	background: #333 url("../img/zunxiang.png") no-repeat 8px 4px;
+	background-size: 50px;
+}
+.wrapper .w_head .w_head_box .w_head_box_mian .media-body .user_info .user_info_3 .user_info_3_push{
+	padding: 0 8px 0 5px;
+	height: 12px;
+	line-height: 12px;
+	border-radius: 12px;
+	font-size: 7px;
+	color: #cead68;
+	background: hsla(0,0%,85%,.1);
+}
+.wrapper .w_head .w_head_box .w_head_box_mian .media-body .my_settings{
+	position: absolute;
+	top: 12px;
+	right: 15px;
+	padding-left: 18px;
+	color: rgba(76,0,0,.7);
+}
+
+.wrapper .w_section{
+	margin: 15px 0;
+	background: #fff;
+}
+.wrapper .w_section ul li{
+	float: left;
+	text-align: center;
+	height: 70px;
+	overflow: hidden;
+}
+.wrapper .w_section ul.w_section_ul1 li{
+	width: 25%;
+}
+.wrapper .w_section ul.w_section_ul2 li{
+	width: 20%;
+}
+.wrapper .w_section ul.w_section_ul3 li{
+	width: 33.33333%;
+}
+.wrapper .w_section ul li a{
+	display: inline-block;
+	width: 100%;
+	height: 70px;
+	color: #666;
+	font-size: 12px;
+}
+.wrapper .w_section ul li a .w_section_img{
+	width: 100%;
+	font-size: 16px;
+	padding: 15px 0 8px 0;
+}
+.wrapper .w_section ul.w_section_ul2 li a .w_section_img{
+	color: #e93b3d;
+}
+.wrapper .w_section ul.w_section_ul3 li a .w_section_img{
+	color: #e93b3d;
+	color: #333;
+}
+.wrapper .w_section ul.w_section_ul2 li a .w_section_img em{
+	font-size: 10px;
+}
+.wrapper .w_section ul li a .w_section_img img{
+	width: 20px;
+}

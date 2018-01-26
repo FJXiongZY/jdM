@@ -1,13 +1,40 @@
 /*
  * 轮播图
  */
-.carousel-indicators li{
+#carousel{
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+#carousel .carousel_inner{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	position: relative;
+}
+#carousel .carousel_inner .item{
+	float: left;
+	overflow: hidden;
+}
+#carousel .carousel_inner .item img{
+	width: 100%;
+	height: auto;
+}
+#carousel .carousel_indicators{
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+}
+#carousel .carousel_indicators li{
 	width: 6px;
 	height: 6px;
+	border: 1px solid white;
+	border-radius: 50%;
+	float: left;
+	margin: 0 3px;
 }
-.carousel-indicators .active{
-	width: 7px;
-	height: 7px;
+#carousel .carousel_indicators li.active{
+	background: white;
 }
 
 /*

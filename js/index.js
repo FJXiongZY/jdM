@@ -2,12 +2,82 @@ $(function(){
 	function resize(){
 		//设置头部的滚动颜色
 		$(window).scroll(function(){
-			var parentCarouselHeight = $("#parentCarousel").height(),
+			var parentCarouselHeight = $("#carousel").height(),
 			scrollHeight = $(window).scrollTop(),
 			opacity = scrollHeight < parentCarouselHeight ? scrollHeight/parentCarouselHeight*0.9 : 0.9;
 
 			$(".jd_header_box").css({"background":"rgba(201,21,35,"+opacity+")"});
 		});
+		//轮播图
+		(function(){
+			var oCarousel = $("#carousel"),
+				oCarousel_inner = oCarousel.children(".carousel_inner"),
+				carousel_indicators = oCarousel.children(".carousel_indicators"),
+				aItem = oCarousel_inner.children(".item"),
+				oItemWidth = aItem.eq(0).width(),
+				itemLen = aItem.length,
+				aLi = carousel_indicators.children("li"),
+				firstItem = aItem.eq(0),
+				lastItem = aItem.eq(itemLen-1),
+				clientWidth = $(window).width() > 768 ? 768 : $(window).width(),
+				index = 1,
+				startX = 0,
+				moveX = 0,
+				thisMoveX = 0,
+				endX = 0,
+				temp = 0,
+				targetX = oItemWidth * 0.3,
+				timer = null;
+			
+			//设置
+			
+			oCarousel_inner.append(firstItem.prop("outerHTML"));
+			oCarousel_inner.prepend(lastItem.prop("outerHTML"));
+			var	aItem = $(".item"),
+				itemLen = aItem.length;
+			aItem.width(clientWidth);							//设置图片的宽度
+			oCarousel_inner.width(itemLen * oItemWidth);	//设置图片容器的宽度
+			oCarousel_inner.css({"left": -oItemWidth});
+			carousel_indicators.css({"margin-left":-carousel_indicators.width()/2});
+			
+			//滑动
+			oCarousel_inner.on("touchstart", function(e){
+				clearInterval(timer);
+				stratX = e.originalEvent.changedTouches[0].pageX;
+			}).on("touchmove", function(e){
+				temp = e.originalEvent.changedTouches[0].pageX;
+				thisMoveX = temp - stratX;
+				moveX = -index * clientWidth + thisMoveX;
+				oCarousel_inner.animate({"left":moveX},0);
+			}).on("touchend", function(e){
+				if( Math.abs(thisMoveX) > targetX && thisMoveX > 0 ){
+					index --;
+					oCarousel_inner.animate({"left":-index*clientWidth});
+					index = index == 0 ? itemLen - 2 : index;
+				}else if( Math.abs(thisMoveX) > targetX && thisMoveX < 0 ){
+					index ++;
+					oCarousel_inner.animate({"left":-index*clientWidth});
+					index = index > itemLen - 2 ? 1 : index;
+				}else{
+					oCarousel_inner.animate({"left":-index*clientWidth});
+				}
+				aLi.eq(index-1).addClass("active").siblings().removeClass("active");
+				timer = setInterval(timerMove, 1000);
+			});
+			
+			function timerMove(){
+				index ++;
+				oCarousel_inner.animate({"left":-index*clientWidth},function(){
+					if(index > itemLen - 2){
+						index = 1;
+						oCarousel_inner.css({"left":-index*clientWidth});
+					}
+					aLi.eq(index-1).addClass("active").siblings().removeClass("active");
+				});
+			}
+			
+			timer = setInterval(timerMove, 1000);
+		})();
 		//京东秒杀
 		(function(){
 			var saleUl = $(".sale-body-ul"),
